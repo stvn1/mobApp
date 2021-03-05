@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string-array name="resturant_tags">
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Organic</item>
+        <item>Italian</item>
+        <item>Thai</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>Mexican</item>
+        <item>Late-Night food</item>
+        <item>Japanese</item>
+    </string-array>
+    <string name="title_activity_full_map_view">Map</string>
+    <string name="title_activity_current_directions">Map</string>
+    <string name="title_activity_map">Map</string>
+</resources>

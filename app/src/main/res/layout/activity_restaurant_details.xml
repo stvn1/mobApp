@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantDetails">
+    <TextView
+        android:id="@+id/txtAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Resturant Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtResturantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddName"
+        android:layout_centerHorizontal="true"
+        android:text="Isshin Ramen"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblResturantAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResturantName"
+        android:layout_centerHorizontal="true"
+        android:text="Address"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblResturantPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRestuantAddress"
+        android:layout_centerHorizontal="true"
+        android:text="Phone Number"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblResturantDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResturantPhone"
+        android:layout_centerHorizontal="true"
+        android:text="Description"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblResturantTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResturantDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Tag"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtRestuantAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblResturantAddress"
+        android:layout_centerHorizontal="true"
+        android:text="420 street"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtResturantDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblResturantDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Big Ting Resturant"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtResturantTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblResturantTag"
+        android:layout_centerHorizontal="true"
+        android:text="Asian" />
+
+    <ImageButton
+        android:id="@+id/btnDirections"
+        android:layout_width="120dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/rbDetailsRatingBar"
+        android:layout_marginTop="51dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/direction_button" />
+
+    <ImageButton
+        android:id="@+id/btnEmailShare"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/email_button" />
+
+    <RatingBar
+        android:id="@+id/rbDetailsRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResturantTag"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/btnSaveEdits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Save " />
+
+    <EditText
+        android:id="@+id/txtResturantPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblResturantPhone"
+        android:layout_centerHorizontal="true"
+        android:text="416-111-1111"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/btnFullMapView"
+        android:layout_width="104dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/rbDetailsRatingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_toEndOf="@+id/btnSaveEdits"
+        android:layout_toRightOf="@+id/btnSaveEdits"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/google_button" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/rbDetailsRatingBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginRight="161dp"
+        android:text="Delete" />
+
+</RelativeLayout>
